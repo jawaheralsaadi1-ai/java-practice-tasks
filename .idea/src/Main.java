@@ -4,6 +4,8 @@ public class Main {
         System.out.println("Task 1:" + cigarParty(50, false));
         //task 2
         System.out.println("Task 2:" + caughtSpeeding(65, true));
+        //task 3
+        System.out.println("Task 3: " + love6(1,5) );
     }
 
     //Task 1:  cigarParty
@@ -27,5 +29,11 @@ public class Main {
             return 1;
         }
         return 2;
+    }
+
+    // Task3 : love6
+    public static boolean love6(int a , int b){
+        return ( a == 6 || b == 6 || a + b == 6 || a - b == 6);
+
     }
 }
