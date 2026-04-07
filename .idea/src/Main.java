@@ -16,7 +16,8 @@ public class Main {
         System.out.println("Task 10: " + blueTicket(9, 2, 0));
         System.out.println("Task 11: " + dateFashion(5, 5));
         System.out.println("Task 12: " + sortaSum(9, 4));
-        System.out.println("Task 13: " + in1To10(11,true));
+        System.out.println("Task 13: " + in1To10(11, true));
+        System.out.println("Task 14: " + old35(15));
     }
 
     //Task 1:  cigarParty
@@ -87,30 +88,45 @@ public class Main {
         if (a % 5 == b % 5) return Math.min(a, b);
         return Math.max(a, b);
     }
+
     //Task10 : blueTicket
-    public static int blueTicket (int a, int b, int c) {
+    public static int blueTicket(int a, int b, int c) {
         int ab = a + b;
         int ac = a + c;
         int cb = c + b;
         if (ab == 10 || ac == 10 || cb == 10) return 10;
         if (ab == 10 + cb || ab == 10 + ac) return 5;
         return 0;
-}
-//Task 11 : dateFashion
-public static int dateFashion (int you, int date) {
-     if ( you <= 2 || date <= 2 ) return 0;
-     if ( you >= 8 || date >= 8 ) return 2;
-     return 1;
-}
-// Task12 : sortaSum
-    public static int sortaSum (int a, int b) {
+    }
+
+    //Task 11 : dateFashion
+    public static int dateFashion(int you, int date) {
+        if (you <= 2 || date <= 2) return 0;
+        if (you >= 8 || date >= 8) return 2;
+        return 1;
+    }
+
+    // Task12 : sortaSum
+    public static int sortaSum(int a, int b) {
         int sum = a + b;
         if (sum >= 10 && sum <= 19) return 20;
         return sum;
     }
-// Task13 in1To10
-    public static boolean in1To10(int n, boolean outsideMode){
-        if (outsideMode) return (n <= 1 || n>= 10) ;
+
+    // Task13 in1To10
+    public static boolean in1To10(int n, boolean outsideMode) {
+        if (outsideMode) return (n <= 1 || n >= 10);
         return (n >= 1 && n <= 10);
+    }
+
+    // Task14 : old35
+    public static boolean old35(int n) {
+        if (n % 3 == 0 && n % 5 == 0) {
+            return false;
+        }
+        if (n % 3 == 0 || n % 5 == 0) {
+            return true;
+        }
+        return false;
     }
 }
