@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Task 4: " + more20(22));
         System.out.println("Task 5: " + nearTen(17));
         System.out.println("Task 6: " + teaParty(20, 6));
+        System.out.println("Task 7: " + twoAsOne(3,2,2));
     }
 
     //Task 1:  cigarParty
@@ -62,5 +63,9 @@ public class Main {
         }
 
         return 1;
+    }
+    // Task7 : twoAsOne
+    public static boolean twoAsOne (int a, int b, int c){
+        return (a + b == c || a + c == b || b + c == a) ;
     }
 }
