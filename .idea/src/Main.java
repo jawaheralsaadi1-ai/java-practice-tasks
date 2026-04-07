@@ -13,6 +13,7 @@ public class Main {
         System.out.println("Task 7: " + twoAsOne(3, 2, 2));
         System.out.println("Task 8: " + lastDigit(23, 19, 13));
         System.out.println("Task 9: " + maxMod5(6, 2));
+        System.out.println("Task 10: " + blueTicket(9, 2, 0));
     }
 
     //Task 1:  cigarParty
@@ -82,6 +83,15 @@ public class Main {
         if (a == b) return 0;
         if (a % 5 == b % 5) return Math.min(a, b);
         return Math.max(a, b);
-
     }
+    //Task10 : blueTicket
+    public static int blueTicket (int a, int b, int c) {
+        int ab = a + b;
+        int ac = a + c;
+        int cb = c + b;
+        if (ab == 10 || ac == 10 || cb == 10) return 10;
+        if (ab == 10 + cb || ab == 10 + ac) return 5;
+        return 0;
+}
+
 }
