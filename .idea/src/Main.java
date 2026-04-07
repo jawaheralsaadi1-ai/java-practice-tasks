@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Task 5: " + nearTen(17));
         System.out.println("Task 6: " + teaParty(20, 6));
         System.out.println("Task 7: " + twoAsOne(3,2,2));
+        System.out.println("Task 8: " + lastDigit(23,19,13));
     }
 
     //Task 1:  cigarParty
@@ -67,5 +68,9 @@ public class Main {
     // Task7 : twoAsOne
     public static boolean twoAsOne (int a, int b, int c){
         return (a + b == c || a + c == b || b + c == a) ;
+    }
+    //Task8 : lastDigit
+    public static boolean lastDigit (int a, int b, int c){
+        return ( a % 10 == b % 10 || b % 10 == c % 10 || c % 10 == a % 10  );
     }
 }
