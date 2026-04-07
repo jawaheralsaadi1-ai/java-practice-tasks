@@ -15,6 +15,7 @@ public class Main {
         System.out.println("Task 9: " + maxMod5(6, 2));
         System.out.println("Task 10: " + blueTicket(9, 2, 0));
         System.out.println("Task 11: " + dateFashion(5, 5));
+        System.out.println("Task 12: " + sortaSum(9, 4));
     }
 
     //Task 1:  cigarParty
@@ -100,4 +101,11 @@ public static int dateFashion (int you, int date) {
      if ( you >= 8 || date >= 8 ) return 2;
      return 1;
 }
+// Task12 : sortaSum
+    public static int sortaSum (int a, int b) {
+        int sum = a + b;
+        if (sum >= 10 && sum <= 19) return 20;
+        return sum;
+    }
+
 }
