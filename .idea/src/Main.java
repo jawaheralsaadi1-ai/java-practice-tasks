@@ -8,6 +8,7 @@ public class Main {
         System.out.println("Task 3: " + love6(1,5) );
         //task 4
         System.out.println("Task 4: " + more20(22) );
+        System.out.println("Task 5: " + nearTen(17));
     }
 
     //Task 1:  cigarParty
@@ -41,5 +42,10 @@ public class Main {
     // Task4 : more20
     public static boolean more20(int n){
         return (n % 20 ==1  || n % 20 == 2);
+    }
+    // Task5: nearTen
+    public static boolean nearTen (int num){
+        return (num % 10 <= 2 || num % 10 >= 8 );
+
     }
 }
