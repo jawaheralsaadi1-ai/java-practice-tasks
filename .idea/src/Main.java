@@ -5,10 +5,11 @@ public class Main {
         //task 2
         System.out.println("Task 2:" + caughtSpeeding(65, true));
         //task 3
-        System.out.println("Task 3: " + love6(1,5) );
+        System.out.println("Task 3: " + love6(1, 5));
         //task 4
-        System.out.println("Task 4: " + more20(22) );
+        System.out.println("Task 4: " + more20(22));
         System.out.println("Task 5: " + nearTen(17));
+        System.out.println("Task 6: " + teaParty(20, 6));
     }
 
     //Task 1:  cigarParty
@@ -35,17 +36,31 @@ public class Main {
     }
 
     // Task3 : love6
-    public static boolean love6(int a , int b){
-        return ( a == 6 || b == 6 || a + b == 6 || a - b == 6);
+    public static boolean love6(int a, int b) {
+        return (a == 6 || b == 6 || a + b == 6 || a - b == 6);
 
     }
+
     // Task4 : more20
-    public static boolean more20(int n){
-        return (n % 20 ==1  || n % 20 == 2);
+    public static boolean more20(int n) {
+        return (n % 20 == 1 || n % 20 == 2);
     }
-    // Task5: nearTen
-    public static boolean nearTen (int num){
-        return (num % 10 <= 2 || num % 10 >= 8 );
 
+    // Task5: nearTen
+    public static boolean nearTen(int num) {
+        return (num % 10 <= 2 || num % 10 >= 8);
+
+    }
+
+    //Task6 : teaParty
+    public static int teaParty(int tea, int candy) {
+        if (tea < 5 || candy < 5) {
+            return 0;
+        }
+        if (2 * tea >= candy || 2 * candy >= tea) {
+            return 2;
+        }
+
+        return 1;
     }
 }
