@@ -6,6 +6,8 @@ public class Main {
         System.out.println("Task 2:" + caughtSpeeding(65, true));
         //task 3
         System.out.println("Task 3: " + love6(1,5) );
+        //task 4
+        System.out.println("Task 4: " + more20(22) );
     }
 
     //Task 1:  cigarParty
@@ -35,5 +37,9 @@ public class Main {
     public static boolean love6(int a , int b){
         return ( a == 6 || b == 6 || a + b == 6 || a - b == 6);
 
+    }
+    // Task4 : more20
+    public static boolean more20(int n){
+        return (n % 20 ==1  || n % 20 == 2);
     }
 }
