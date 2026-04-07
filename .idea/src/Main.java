@@ -16,6 +16,7 @@ public class Main {
         System.out.println("Task 10: " + blueTicket(9, 2, 0));
         System.out.println("Task 11: " + dateFashion(5, 5));
         System.out.println("Task 12: " + sortaSum(9, 4));
+        System.out.println("Task 13: " + in1To10(11,true));
     }
 
     //Task 1:  cigarParty
@@ -107,5 +108,9 @@ public static int dateFashion (int you, int date) {
         if (sum >= 10 && sum <= 19) return 20;
         return sum;
     }
-
+// Task13 in1To10
+    public static boolean in1To10(int n, boolean outsideMode){
+        if (outsideMode) return (n <= 1 || n>= 10) ;
+        return (n >= 1 && n <= 10);
+    }
 }
