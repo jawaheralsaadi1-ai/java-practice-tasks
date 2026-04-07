@@ -18,6 +18,7 @@ public class Main {
         System.out.println("Task 12: " + sortaSum(9, 4));
         System.out.println("Task 13: " + in1To10(11, true));
         System.out.println("Task 14: " + old35(15));
+        System.out.println("Task 15: " + teenSum(13, 2));
     }
 
     //Task 1:  cigarParty
@@ -128,5 +129,13 @@ public class Main {
             return true;
         }
         return false;
+    }
+    //Task15 : teenSum
+    public static int teenSum(int a, int b){
+        int min = 13;
+        int max = 19;
+        int sum = a + b;
+        if (a >= min && a <= max || b >= min && b <= max) return 19;
+        return sum;
     }
 }
