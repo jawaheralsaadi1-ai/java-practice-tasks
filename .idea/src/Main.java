@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Task 8: " + lastDigit(23, 19, 13));
         System.out.println("Task 9: " + maxMod5(6, 2));
         System.out.println("Task 10: " + blueTicket(9, 2, 0));
+        System.out.println("Task 11: " + dateFashion(5, 5));
     }
 
     //Task 1:  cigarParty
@@ -93,5 +94,10 @@ public class Main {
         if (ab == 10 + cb || ab == 10 + ac) return 5;
         return 0;
 }
-
+//Task 11 : dateFashion
+public static int dateFashion (int you, int date) {
+     if ( you <= 2 || date <= 2 ) return 0;
+     if ( you >= 8 || date >= 8 ) return 2;
+     return 1;
+}
 }
